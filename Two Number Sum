@@ -1,4 +1,5 @@
 //two number sum
+
 //Solution 1
 function twoNumberSum(array, targetSum) {
   array.sort((a, b) => a - b);
@@ -17,7 +18,9 @@ function twoNumberSum(array, targetSum) {
   return []; // if no matches found in the array
 }
 
+
 //Solution 2 with hash table {}
+
 function twoNumberSum(array, targetSum) {
   const nums = {};
   for (const num of array) {
