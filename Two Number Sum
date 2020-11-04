@@ -1,6 +1,7 @@
 //two number sum
 
 //Solution 1
+
 function twoNumberSum(array, targetSum) {
   array.sort((a, b) => a - b);
   let left = 0;
