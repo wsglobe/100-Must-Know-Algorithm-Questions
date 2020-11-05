@@ -10,7 +10,7 @@ function isValidSubsequence(array, sequence) {
     seqIdx++;
     arrIdx++;
   }
-  return seqIdx === sequence.length;
+  return seqIdx === sequence.length; //we have a match
 }
 
 //Solution 2 using For Loop
@@ -18,7 +18,7 @@ function isValidSubsequence(array, sequence) {
 function isValidSubsequence(array, sequence) {
   let seqIdx = 0;
   for (const value of array) {
-    if (seqIdx === sequence.length) break;
+    if (seqIdx === sequence.length) break; // we have a match
     if (sequence[seqIdx] === value)
     seqIdx++;
   }
