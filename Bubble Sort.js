@@ -5,10 +5,10 @@
 
 // Solution
 function bubbleSort(array) {
-  let isSorted = fasle;
+  let isSorted = fasle; // assume not sorted
   let counter = 0;
   while (!isSorted) {
-    isSorted = true;
+    isSorted = true; // assume is sorted
     for (let i = 0; i < array.length - 1 - counter; i++) {
       if (array[i] > array[i + 1]) {
         swap(i, i + 1, array);
