@@ -19,10 +19,11 @@ function bubbleSort(array) {
   return array;
 }
 
+
 function swap(i, j, array) {
-  const temp = array[j];
-  array[j] = array[i];
-  array[i] = temp;
+  const temp = array[j]; // store array[j] in a temporary variable
+  array[j] = array[i]; // put array[i] in the place of array[j]
+  array[i] = temp; // assign the temp variable to array[i]
 }
 
 exports.bubbleSort = bubbleSort;
