@@ -23,7 +23,7 @@ function isValidSubsequence(array, sequence) {
 }
 
 //Solution 2 using For Loop
-
+//O(n) time | O(1) space
 function isValidSubsequence(array, sequence) {
   let seqIdx = 0;
   for (const value of array) {
