@@ -34,4 +34,5 @@ function isValidSubsequence(array, sequence) {
   return seqIdx === sequence.length;
 }
 
+exports.isValidSubsequence = isValidSubsequence;
 
