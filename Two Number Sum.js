@@ -1,6 +1,6 @@
 
 
-//Solution 1
+// Solution 1
 
 function twoNumberSum(array, targetSum) {
   array.sort((a, b) => a - b); //the compare func will sort the array in ascending order
@@ -20,7 +20,8 @@ function twoNumberSum(array, targetSum) {
 }
 
 
-//Solution 2 with hash table {}
+// Solution 2 using hash table {}
+// O(n) time | O(n) space
 
 function twoNumberSum(array, targetSum) {
   const nums = {};
