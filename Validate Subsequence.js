@@ -1,4 +1,6 @@
-// [1],[1,3],[2,4],[1,2,3,4] are all Subsequences of array [1,2,3,4]
+/* Given two non-empty array of integers, write a function that determines whether the second array is a subsequence of the first one.
+
+Note that [1],[1,3],[2,4],[1,2,3,4] are all Subsequences of array [1,2,3,4]
 
 //Solution 1 using While Loop
 
