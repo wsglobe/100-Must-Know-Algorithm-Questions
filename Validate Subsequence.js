@@ -10,7 +10,7 @@ O(n) time | O(1) space - where n is the length of the array
 */
 
 //Solution 1 using While Loop
-
+//O(n) time | O(1) space
 function isValidSubsequence(array, sequence) {
   let arrIdx = 0;
   let seqIdx = 0;
