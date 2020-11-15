@@ -1,7 +1,7 @@
 
 
 // Solution 1
-
+// O(nlog(n)) time | O(1) space
 function twoNumberSum(array, targetSum) {
   array.sort((a, b) => a - b); //the compare func will sort the array in ascending order
   let left = 0;
