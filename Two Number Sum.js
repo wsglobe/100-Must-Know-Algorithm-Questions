@@ -46,3 +46,5 @@ function twoNumberSum(array, targetSum) {
   }
   return []; //if no matches found in the array
 }
+
+exports.twoNumberSum = twoNumberSum;
