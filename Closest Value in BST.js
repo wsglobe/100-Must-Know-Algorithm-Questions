@@ -1,5 +1,7 @@
-//find the closest value to target value in BST(Binary Search Tree)
-//compare the absolute value between the two
+/* Write a function that takes in a Binary Search Tree(BST) and a target integer value and returns the closest value to that target value contained in the BST.
+
+You can assume that there will only be one closest value.
+
 
 //Solution 1
 //Helper Function
