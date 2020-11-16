@@ -6,9 +6,10 @@ Each BinaryTree node has an integer value, a left child node, and a right child 
 
 *Optimal Space & Time Complexity
 O(n) time | O(n) space - where n is the number of nodes in the Binary Tree
+*/
 
 //Solution
-
+//O(n) time | O(n) space - where n is the number of nodes in the Binary Tree
 class BinaryTree {
   constructor(value) {
     this.value = value;
