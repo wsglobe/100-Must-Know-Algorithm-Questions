@@ -2,9 +2,13 @@
 
 You can assume that there will only be one closest value.
 
+*Optimal Space & Time Complexity
+Average: O(log(n)) time | O(1) space 
+Worst: O(n) time | O(1) space - where n is the number of nodes in the BST
+*/
 
 //Solution 1
-//Helper Function
+
 function findClosestValueInBst(tree, target) {
   return findClosestValueInBstHelper(tree, target, tree.value);
 }
@@ -27,7 +31,7 @@ function findClosestValueInBst(tree, target) {
 
 
 //Solution 2
-//Helper Function
+
 function findClosestValueInBst(tree, target) {
   return findClosestValueInBstHelper(tree, target, tree.value);
 }
@@ -49,7 +53,6 @@ function findClosestValueInBstHelper(tree, target, closest) {
   return closest;
 }
 
-// This is the class of the input tree:
 class BST {
   constructor(value) {
     this.value = value;
