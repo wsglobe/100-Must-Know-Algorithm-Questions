@@ -10,6 +10,7 @@ Worst: O(n) time | O(1) space - where n is the number of nodes in the BST
 //Solution 1
 //Average: O(log(n)) time | O(log(n)) space
 //Worst: O(n) time | O(n) space
+
 function findClosestValueInBst(tree, target) {
   return findClosestValueInBstHelper(tree, target, tree.value);
 }
@@ -32,6 +33,8 @@ function findClosestValueInBstHelper(tree, target, closest) {
 
 
 //Solution 2
+//Average: O(log(n)) time | O(1) space
+//Worst: O(n) time | O(1) space
 
 function findClosestValueInBst(tree, target) {
   return findClosestValueInBstHelper(tree, target, tree.value);
