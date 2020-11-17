@@ -26,7 +26,11 @@ function branchSums(root) {
 }
 
 function calculateBranchSums(node, runningSum, sums) {
-  
+  const newRunningSum = runningSum + node.value
+  // at leaf node( a node without any children nodes)
+  if (!node.left && !node.right) {
+    return sums.push(newRunningSum)
+  }
 
   calculateBranchSums(node.left, newRunningSum, sums);
   calculateBranchSums(node.right, newRunningSum, sums);
