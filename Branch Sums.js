@@ -18,20 +18,15 @@ class BinaryTree {
   }
 }
 
+// at root node
 function branchSums(root) {
-  const sums = []; //Root Node
+  const sums = [];
   calculateBranchSums(root, 0, sums); //runningSum is 0
   return sums;
 }
 
 function calculateBranchSums(node, runningSum, sums) {
-  if (!node) return; // Leaf Node
-
-  const newRunningSum = runningSum + node.value;
-  if (!node.left && !node.right) {
-    sums.push(newRunningSum);
-    return;
-  }
+  
 
   calculateBranchSums(node.left, newRunningSum, sums);
   calculateBranchSums(node.right, newRunningSum, sums);
