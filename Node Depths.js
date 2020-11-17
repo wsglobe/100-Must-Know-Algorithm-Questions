@@ -6,6 +6,10 @@ Write a function that takes in a Binary Tree and returns the sum of its node's d
 
 Each BinaryTree node has an integer value, a left child node, and a right child node. Children nodes can either be BinaryTree nodes themselves or None / null.
 
+*Optimal Space & Time Complexity
+Average case: when the tree is balanced
+O(n) time | o(h) space - where n is the number of nodes in the Binary Tree and h is the height of the Binary Tree */
+
 
 //Solution 1 using Iterative approach
 class BinaryTree {
