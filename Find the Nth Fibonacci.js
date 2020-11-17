@@ -2,7 +2,7 @@
 *Optimal Space & Time Complexity
 O(n) time | O(1) - where n is the input number*/
 
-//Solution 1
+// Solution 1
 function getNthFib(n) {
   if (n === 2) {
     return 1;
@@ -13,7 +13,7 @@ function getNthFib(n) {
   }
 }
 
-//Solution 2
+// Solution 2
 function getNthFib(n, memoize = {1: 0, 2: 1}) {
   if (n in memoize) {
     return memoize[n];
@@ -23,7 +23,7 @@ function getNthFib(n, memoize = {1: 0, 2: 1}) {
   }
 }
 
-//Solution 3
+// Solution 3
 function getNthFib(n) {
   const lastTwo = [0, 1];
   let counter = 3;
