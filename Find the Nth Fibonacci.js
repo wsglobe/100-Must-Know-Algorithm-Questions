@@ -15,6 +15,7 @@ function getNthFib(n) {
 }
 
 // Solution 2
+// O(n) time | O(n) space
 function getNthFib(n, memoize = {1: 0, 2: 1}) {
   if (n in memoize) {
     return memoize[n];
