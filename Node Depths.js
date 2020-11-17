@@ -11,7 +11,7 @@ Average case: when the tree is balanced
 O(n) time | o(h) space - where n is the number of nodes in the Binary Tree and h is the height of the Binary Tree */
 
 
-//Solution 1 using Iterative approach
+// Solution 1 using Iterative approach
 class BinaryTree {
   constructor(value) {
     this.value = value;
@@ -34,7 +34,7 @@ function nodeDepths(root) {
 }
 
 
-//Solution 2 using Recursive approach
+// Solution 2 using Recursive approach
 class BinaryTree {
   constructor(value) {
     this.value = value;
@@ -47,3 +47,5 @@ function nodeDepths(root, depth = 0) {
   if (root === null) return 0;
   return depth + nodeDepths(root.left, depth + 1) + nodeDepths(root.right, depth + 1);
 }
+
+exports.nodeDepths = nodeDepths;
