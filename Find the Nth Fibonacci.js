@@ -26,6 +26,7 @@ function getNthFib(n, memoize = {1: 0, 2: 1}) {
 }
 
 // Solution 3
+// O(n) time | O(1) space
 function getNthFib(n) {
   const lastTwo = [0, 1];
   let counter = 3;
