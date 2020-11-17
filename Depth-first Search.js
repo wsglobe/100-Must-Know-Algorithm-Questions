@@ -21,3 +21,5 @@ class Node {
     return array;
   }
 }
+
+exports.Node = Node;
