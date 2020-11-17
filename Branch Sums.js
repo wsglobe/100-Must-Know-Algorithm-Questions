@@ -36,3 +36,6 @@ function calculateBranchSums(node, runningSum, sums) {
   calculateBranchSums(node.left, newRunningSum, sums);
   calculateBranchSums(node.right, newRunningSum, sums);
 }
+
+exports.BinaryTree = BinaryTree;
+exports.branchSums = branchSums;
