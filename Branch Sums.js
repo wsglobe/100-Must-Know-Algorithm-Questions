@@ -25,7 +25,7 @@ function branchSums(root) {
 }
 
 function calculateBranchSums(node, runningSum, sums) {
-  if (!node) return;
+  if (!node) return; // Leaf Node
 
   const newRunningSum = runningSum + node.value;
   if (!node.left && !node.right) {
