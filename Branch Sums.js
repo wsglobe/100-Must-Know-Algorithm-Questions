@@ -19,7 +19,7 @@ class BinaryTree {
 }
 
 function branchSums(root) {
-  const sums = [];
+  const sums = []; //Root Node
   calculateBranchSums(root, 0, sums); //runningSum is 0
   return sums;
 }
