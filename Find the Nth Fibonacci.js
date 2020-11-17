@@ -1,4 +1,6 @@
-//Formular to find the nth: F(n) = F(n-1) + F(n-2), where F(1) = 0 and F(2) = 1;
+/*Formular to find the nth: F(n) = F(n-1) + F(n-2), where F(1) = 0 and F(2) = 1;
+*Optimal Space & Time Complexity
+O(n) time | O(1) - where n is the input number*/
 
 //Solution 1
 function getNthFib(n) {
