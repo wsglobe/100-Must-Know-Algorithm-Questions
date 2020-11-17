@@ -31,7 +31,7 @@ function calculateBranchSums(node, runningSum, sums) {
   if (!node.left && !node.right) {
     return sums.push(newRunningSum)
   }
-
+  // at left children node or right children node
   calculateBranchSums(node.left, newRunningSum, sums);
   calculateBranchSums(node.right, newRunningSum, sums);
 }
