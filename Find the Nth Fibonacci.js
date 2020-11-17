@@ -3,6 +3,7 @@
 O(n) time | O(1) - where n is the input number*/
 
 // Solution 1
+// O(2^n) time | O(n) space
 function getNthFib(n) {
   if (n === 2) {
     return 1;
