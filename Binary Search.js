@@ -8,6 +8,7 @@ Sample Output 3
 O(log(n)) time | O(1) space - where n is the length of the input array */
 
 // Solution 1
+
 function binarySearch(array, target) {
   return binarySearchHelper(array, target, 0, array.length - 1);
 }
@@ -29,6 +30,7 @@ exports.binarySearch = binarySearch;
 
 
 // Solution 2
+
 function binarySearch(array, target) {
   return binarySearchHelper(array, target, 0, array.length - 1);
 }
