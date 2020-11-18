@@ -30,7 +30,7 @@ exports.binarySearch = binarySearch;
 
 
 // Solution 2
-
+// O(log(n)) time | O(1) space
 function binarySearch(array, target) {
   return binarySearchHelper(array, target, 0, array.length - 1);
 }
