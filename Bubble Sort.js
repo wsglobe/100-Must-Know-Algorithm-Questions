@@ -1,7 +1,14 @@
-// Write a function that takes in an array of integers and returns a sorted version of that array. Use the Bubble Sort algorithm to sort the array.
-// The idea behind bubble sort is that every pair of adjacent values is compared, and then the two values swap positions if the first value is greater than the second.
-// array = [8, 5, 2, 9, 5, 6, 3]
-// sorted array = [2, 3, 5, 5, 6, 8, 9]
+/* Write a function that takes in an array of integers and returns a sorted version of that array. Use the Bubble Sort algorithm to sort the array.
+
+The idea behind bubble sort is that every pair of adjacent values is compared, and then the two values swap positions if the first value is greater than the second.
+
+array = [8, 5, 2, 9, 5, 6, 3]
+sorted array = [2, 3, 5, 5, 6, 8, 9]
+
+*Optimal Space & Time Complexity
+Best: O(n) time | O(1) space
+Average: O(n^2) time | O(1) space
+Worst: O(n^2) time | O(1) space */
 
 // Solution
 function bubbleSort(array) {
