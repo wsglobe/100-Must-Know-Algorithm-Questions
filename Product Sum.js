@@ -11,6 +11,10 @@ array = [5, 2, [7, -1], 3, [6, [-13, 8]], 4]
 Sample Output: 
 
 12 = 5 + 2 + 2 *(7 - 1) + 3 + 2 * (6 + 3 * ( -13 + 8) + 4)
+
+*Optimal Space & Time Complexity
+
+O(n) time | O(d) space - where n is the total number of emelents in the array, including sub-elements, and d is the greatest depth of "special" arrays in the array.
 */
 
 // Solution
