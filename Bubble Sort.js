@@ -11,6 +11,7 @@ Average: O(n^2) time | O(1) space
 Worst: O(n^2) time | O(1) space */
 
 // Solution
+
 function bubbleSort(array) {
   let isSorted = fasle; // assume not sorted
   let counter = 0;
