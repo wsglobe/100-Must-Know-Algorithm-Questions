@@ -6,10 +6,16 @@ Sample Input:
 string = "xyz" key = 2
 Sample Output:
 "zab" 
-*/
+
+*Optimal Space & Time Complexity
+
+O(n) tiem | O(n) space - where n is the lenght of the input string */
+
 
 // Solution 1
+
 // O(n) time | O(n) space
+
 function caesarCipherEncryptor(string, key) {
   const newLetters = [];
   const newKey = key % 26;
@@ -28,7 +34,9 @@ exports.caesarCipherEncryptor = caesarCipherEncryptor;
 
 
 // Solution 2
+
 // O(n) time | O(n) space
+
 function caesarCipherEncryptor(string, key) {
   const newLetters = [];
   const newKey = key % 26;
