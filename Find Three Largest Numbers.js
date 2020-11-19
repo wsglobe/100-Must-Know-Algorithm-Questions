@@ -13,6 +13,7 @@ O(n) time | O(1) space - where n is the length of the input array */
 
 
 // Solution
+
 function findThreeLargestNumbers(array) {
   const threeLargest = [null, null, null];
   for (const num of array) {
