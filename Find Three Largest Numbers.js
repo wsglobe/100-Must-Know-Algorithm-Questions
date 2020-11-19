@@ -7,6 +7,10 @@ Sample Output:
 
 Tip: Can we just sort the input array and return the last three elements in the sorted array?
 
+*Optimal Space & Time Complexity
+
+O(n) time | O(1) space - where n is the length of the input array */
+
 
 // Solution
 function findThreeLargestNumbers(array) {
