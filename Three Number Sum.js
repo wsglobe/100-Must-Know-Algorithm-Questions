@@ -35,3 +35,4 @@ function threeNumberSum(array, targetSum) {
   return triplets;
 }
 
+exports.threeNumberSum = threeNumberSum;
