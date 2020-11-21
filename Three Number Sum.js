@@ -7,3 +7,6 @@ array = [12, 3, 1, 2, -6, 5, -8, 6] targetSum = 0
 
 Sample Output:
 [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
+
+*Optimal Space & Time Complexity
+O(n^2) time | O(n) space - where n is the length of the input array */
