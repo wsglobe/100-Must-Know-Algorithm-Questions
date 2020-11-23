@@ -12,3 +12,7 @@ arrayTwo = [26, 134, 135, 15, 17]
 Sample Output:
 
 [28, 26]
+
+*Optimal Space & Time Complexity
+
+O(nlog(n) + mlog(m)) time | O(1) space - where n is the length of the first input array and m is the length of the second input array */
