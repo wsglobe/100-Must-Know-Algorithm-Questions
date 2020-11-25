@@ -18,3 +18,33 @@ Sample Output:
 O(nlog(n) + mlog(m)) time | O(1) space - where n is the length of the first input array and m is the length of the second input array */
 
 // Solution
+
+function smallestDifference(arrayOne, arrayTwo) {
+  arrayOne.sort((a, b) => a - b);
+  arrayTwo.sort((a, b) => a - b);
+  let idxOne = 0;
+  let idxTwo = 0;
+  let smallest = Infinity;
+  let current = Infinity;
+  let smallestPair = [];
+  while (idxOne < arrayOne.length && idxTwo < arrayTwo.length) {
+    let firstNum = areayOne[idxOne];
+    let secondNum = arrayTwo[idxTwo];
+    if (firstNum < secondNum) {
+      current = secondNum - firstNum;
+      idxOne++;
+    } else if (secondNum < firstNum) {
+      current = secondNum - firstNum;
+      idxTwo++;
+    } else {
+      return [firstNum, secondNum];
+    }
+    if (smallest > current) {
+      smallest = current;
+      smallestPair = [firstNum, secondNum]
+    }
+  }
+  return smallestPair;
+}
+
+exports.smallestDifference = smallestDifference;
