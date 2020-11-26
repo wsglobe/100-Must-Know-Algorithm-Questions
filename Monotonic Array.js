@@ -38,3 +38,18 @@ function breaksDirection(direction, previousInt, currentInt) {
   if (direction > 0) return difference < 0;
   return difference > 0;
 }
+
+
+// Solution 2
+
+function isMonotonic(array) {
+  let isNonDecreasing = true;
+  let isNonIncreasing = true;
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < array[i - 1]) isNonDecreasing = false;
+    if (array[i] > array[i - 1]) isNonIncreasing = false;
+  }
+  return isNonDecreasing || isNonIncreasing;
+}
+
+exports.isMonotonic = isMonotonic;
