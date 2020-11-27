@@ -12,4 +12,4 @@ Traverse the BST all the while applying the logic described in Hint #1. For inse
 
 *Optimal Space & Time Complexity
 Average(all 3 methods): O(log(n)) Time | O(1) Space - where n is the number of nodes in the BST
-Worst(all 3 methods): O(n) Time | O(1) Space - where n is the number of nodes in the BST
+Worst(all 3 methods): O(n) Time | O(1) Space - where n is the number of nodes in the BST */
