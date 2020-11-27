@@ -9,3 +9,7 @@ As you try to insert, find, or remove a value into, in, or from a BST, you will 
 
 Hint 2:
 Traverse the BST all the while applying the logic described in Hint #1. For insertion, add the target value to the BST once you reach a leaf (None/null) node. For searching, if you reach a leaf node without having found the target value that means the value isn't in the BST. For removal, consider the various cases that you might encounter: the node you need to remove might have two children nodes, one, or none; it might also be the root node; make sure to account for all of these cases.
+
+*Optimal Space & Time Complexity
+Average(all 3 methods): O(log(n)) Time | O(1) Space - where n is the number of nodes in the BST
+Worst(all 3 methods): O(n) Time | O(1) Space - where n is the number of nodes in the BST
