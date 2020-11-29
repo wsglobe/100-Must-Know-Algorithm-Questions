@@ -2,4 +2,15 @@
 
 *Optimal Space & Time Complexity
 
-O(n) Time | O(n) Space - where n is the number of nodes in the BST
+O(n) Time | O(n) Space - where n is the number of nodes in the BST */
+
+// Solution
+
+function inOrderTraverse(tree, array) {
+  if (tree !== null) {
+    inOrderTraverse(tree.left, array);
+    array.push(tree.value);
+    inOrderTraverse(tree.right, array);
+  }
+  return array;
+}
