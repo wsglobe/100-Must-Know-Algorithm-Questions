@@ -23,3 +23,12 @@ function preOrderTraverse(tree, array) {
   }
   return array;
 }
+
+function postOrderTraverse(tree, array) {
+  if (tree !== null) {
+    postOrderTraverse(tree.left, array);
+    postOrderTraverse(tree.right, array);
+    array.push(tree.value);
+  }
+  return array;
+}
