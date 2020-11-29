@@ -32,3 +32,7 @@ function postOrderTraverse(tree, array) {
   }
   return array;
 }
+
+exports.inOrderTraverse = inOrderTraverse;
+exports.preOrderTraverse = preOrderTraverse;
+exports.postOrderTraverse = postOrderTraverse;
