@@ -41,3 +41,5 @@ function maxSubsetSumNoAdjacent(array) {
   }
   return first;
 }
+
+exports.maxSubsetSumNoAdjacent = maxSubsetSumNoAdjacent;
