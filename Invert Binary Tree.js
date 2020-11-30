@@ -34,3 +34,9 @@ funciton invertBinaryTree(tree) {
   invertBinaryTree(tree.right);
 }
 
+function swapLeftAndRight(tree) {
+  const left = tree.left;
+  tree.left = tree.right;
+  tree.right = left;
+}
+
