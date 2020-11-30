@@ -40,3 +40,4 @@ function swapLeftAndRight(tree) {
   tree.right = left;
 }
 
+exports.invertBinaryTree = invertBinaryTree;
