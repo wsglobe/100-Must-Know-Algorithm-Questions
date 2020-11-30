@@ -7,3 +7,7 @@ array = [75, 105, 120, 75, 90, 135]
 
 Sample Output:
 330 // 75 + 120 + 135
+
+*Optimal Space & Time Complexity
+
+O(n) Time | O(1) Space - where n is the length of the input array
