@@ -14,8 +14,8 @@ Hint: Recognize that a palindrome is a string that is symmetrical with respect t
 
 O(n^2) Time | O(n) Space - where n is the length of the input string */
 
-// Solution
-
+// Solution 1
+// O(n^2) Time | O(n) Space
 function longestPalindromicSubstring(string) {
   let currentLongest = [0, 1];
   for (let i = 1; i < string.length; i++) {
