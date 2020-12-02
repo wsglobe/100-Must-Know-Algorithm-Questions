@@ -35,3 +35,5 @@ function getLongestPalindromeFrom(string, leftIdx, rightIdx) {
   }
   return [leftIdx + 1, rightIdx];
 }
+
+exports.longestPalindromicSubstring = longestPalindromicSubstring;
