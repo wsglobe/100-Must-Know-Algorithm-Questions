@@ -22,12 +22,15 @@ function hasSingleCycle(array) {
     numElementsVisited++;
     currentIdx = getNextIdx(currentIdx, array);
   }
-  return currentIdx === 0;
+  return currentIdx === 0; // back at starting index
 }
-
+// Helper function for handling edge cases
 function getNextIdx(currentIdx, array) {
   const jump = array[currentIdx];
   const nextIdx = (currentIdx + jump) % array.length;
+  // [26, 1, 2 , 3, 4]
+  // nextIdx = (0 + 26) % 5 = 1;
+  // what about [-26, 1, 2, 3 ,4]?
   return nextIdx >= 0 ? nextIdx : nextIdx + array.length;
 }
 
