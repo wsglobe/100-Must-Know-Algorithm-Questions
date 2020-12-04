@@ -30,3 +30,5 @@ function getNextIdx(currentIdx, array) {
   const nextIdx = (currentIdx + jump) % array.length;
   return nextIdx >= 0 ? nextIdx : nextIdx + array.length;
 }
+
+exports.hasSingleCycle = hasSingleCycle;
