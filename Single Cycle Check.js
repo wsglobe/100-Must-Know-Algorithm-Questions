@@ -7,3 +7,7 @@ Write a function that returns a boolean representing whether the jummps in the a
 Sample Input: array = [2, 3, 1, -4, -4, 2]
 
 Sample Output: true
+
+*Optimal Space & Time Complexity
+
+O(n) Time | O(1) Space - where n is the length of the input array
