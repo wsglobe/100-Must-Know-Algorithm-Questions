@@ -44,3 +44,5 @@ function powerset(array, idx = null) {
   }
   return subsets;
 }
+
+exports.powerset = powerset;
