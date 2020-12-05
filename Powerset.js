@@ -10,4 +10,18 @@ Sample Output: [[], [1], [2], [3], [1, 2], [1, 3], [ 2, 3], [1 , 2, 3]]
 
 *Optimal Space & Time Complexity
 
-O(n*2^n) Time | O(n*2^n) Space - where n is the length of the input array
+O(n*2^n) Time | O(n*2^n) Space - where n is the length of the input array */
+
+// Solution 1
+
+function powerset(array) {
+  const subsets = [[]];
+  for (const ele of array) {
+    const length = subsets.length;
+    for (let i = 0; i < length; i++) {
+      const currentSubset = subsets[i];
+      subsets.push(currentSubset.concat(ele));
+    }
+  }
+  return subsets;
+}
