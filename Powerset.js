@@ -3,3 +3,7 @@
 The powerset P(X) of a set X is the set of all subsets of X. For example, the powerset of [1, 2] is [[], [1], [2], [1, 2]].
 
 Note that the sets in the powerset do not need to be in any particular order.
+
+Sample Input: array = [1, 2, 3]
+
+Sample Output: [[], [1], [2], [3], [1, 2], [1, 3], [ 2, 3], [1 , 2, 3]]
