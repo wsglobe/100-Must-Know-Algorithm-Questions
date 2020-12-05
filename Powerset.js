@@ -7,3 +7,7 @@ Note that the sets in the powerset do not need to be in any particular order.
 Sample Input: array = [1, 2, 3]
 
 Sample Output: [[], [1], [2], [3], [1, 2], [1, 3], [ 2, 3], [1 , 2, 3]]
+
+*Optimal Space & Time Complexity
+
+O(n*2^n) Time | O(n*2^n) Space - where n is the length of the input array
