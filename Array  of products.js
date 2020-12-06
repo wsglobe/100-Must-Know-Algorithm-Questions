@@ -75,3 +75,5 @@ function arrayOfProducts(array) {
   }
   return products;
 }
+
+exports.arrayOfProducts = arrayOfProducts;
