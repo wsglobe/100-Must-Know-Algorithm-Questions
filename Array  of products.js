@@ -10,4 +10,22 @@ Sample output: [8, 40, 10, 20]
 
 *Optimal Space & Time Complexity
 
-O(n) Time | O(n) Space - where n is the length of the input array
+O(n) Time | O(n) Space - where n is the length of the input array */
+
+// Solution 1
+// O(n^2) Time | O(n) Space
+
+function arrayOfProducts(array) {
+  const products = [];
+
+  for (let i = 0; i < array.length; i++) {
+    let runningProduct = 1;
+    for (let j = 0; j < array.length; j++) {
+      if (i !== j) {
+        runningProduct *= array[j];
+      }
+      products[i] = runningProduct;
+    }
+  }
+  return products;
+}
