@@ -7,3 +7,7 @@ Note that you're expected to solve this problem without using division.
 Sample Input: array = [5, 1, 4, 2]
 
 Sample output: [8, 40, 10, 20]
+
+*Optimal Space & Time Complexity
+
+O(n) Time | O(n) Space - where n is the length of the input array
