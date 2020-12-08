@@ -56,3 +56,4 @@ function swap(i, j, array) {
   array[j] = temp;
 }
 
+exports.getPermutations = getPermutations;
