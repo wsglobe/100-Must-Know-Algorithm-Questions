@@ -51,3 +51,5 @@ function removeKthNodeFromEnd(head, k) {
   first.next = first.next.next;
 }
 
+exports.linkedList = linkedList;
+exports.removeKthNodeFromEnd = removeKthNodeFromEnd;
