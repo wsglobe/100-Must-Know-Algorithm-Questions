@@ -16,4 +16,9 @@ head = 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9      k = 4
 Sample Output:
 // No output required.
 // The 4th node from the end of the lsit(the node with value 6) is removed.
-0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 7 -> 8 -> 9 */
+0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 7 -> 8 -> 9
+
+*Optimal Space & Time Complexity
+
+O(n) Time | O(1) Space - where n is the number of nodes in the Linked List */
+
