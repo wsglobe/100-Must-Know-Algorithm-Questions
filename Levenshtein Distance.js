@@ -5,3 +5,7 @@ There are three edit operations: insertion of a character, deletion of a charact
 Sample Input: str1 = "abc" str2 = "yabd"
 
 Sample Output: 2 // insert "y"; substitute "c" for "d"
+
+*Optimal Space & Time Complexity
+
+O(nm) Time | O(min(n.m)) Space - where n and m are the lengths of the two input strings */
