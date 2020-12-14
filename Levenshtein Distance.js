@@ -66,3 +66,5 @@ function levenshteinDistance(str1, str2) {
   }
   return big.length % 2 === 0 ? evenEdits[small.length] : oddEdits[small.length];
 }
+
+exports.levenshteinDistance = levenshteinDistance;
