@@ -20,3 +20,5 @@ function kadanesAlgorithm(array) {
   }
   return maxSoFar;
 }
+
+exports.kadanesAlgorithm = kadanesAlgorithm;
