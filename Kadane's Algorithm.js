@@ -3,3 +3,7 @@
 Sample Input: array = [3,5,-9,1,3,-2,3,4,7,2,-9,6,3,1,-5,4]
 
 Sample Output: 19 // [1,3,-2,3,4,7,2,-9,6,3,1]
+
+*Optimal Space & Time Complexity
+
+O(n) Time | O(1) Space - where n is the length of the input array
