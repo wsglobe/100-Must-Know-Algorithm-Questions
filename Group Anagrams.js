@@ -9,3 +9,7 @@ words = ["yo", "act", "flop", "tac", "foo", "cat", "oy", "olfp"]
 
 Sample Output:
 [["yo","oy"], ["flop","olfp"], ["act","tac","cat"],["foo"]]
+
+*Optimal Space & Time Complexity
+
+O(w*n*log(n)) Time | O(wn) Space - where w is the number of words and n is the length of the longest word */
