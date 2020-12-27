@@ -20,7 +20,7 @@ O(w*n*log(n)) Time | O(wn) Space - where w is the number of words and n is the l
 function groupAnagrams(words) {
   if (words.length === 0) return [];
 
-  const sortedWord = words.map(word => word.split('').sort().join(''));
+  const sortedWords = words.map(word => word.split('').sort().join(''));
   const indices = [...Array(words.length).keys()];
   indices.sort((a, b) => {
     if (sortedWords[a] < sortedWords[b]) return -1;
