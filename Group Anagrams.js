@@ -16,6 +16,44 @@ O(w*n*log(n)) Time | O(wn) Space - where w is the number of words and n is the l
 
 // Solution 1
 // O(w*n*log(n) + n*w*log(w)) Time | O(wn) Space
+
+function groupAnagrams(words) {
+  if (words.length === 0) return [];
+
+  const sortedWord = words.map(word => word.split('').sort().join(''));
+  const indices = [...Array(words.length).keys()];
+  indices.sort((a, b) => {
+    if (sortedWords[a] < sortedWords[b]) return -1;
+    if (sortedWords[a] > sortedWords[b]) return 1;
+    return 0;
+  });
+
+  const result = [];
+  let currentAnagramGroup = [];
+  let currentAnagram = sortedWords[indices[0]];
+  for (const index of indices) {
+    const word = words[index];
+    const sortedWord = sortedWords[index];
+
+    if (sortedWord === currentAnagram) {
+      currentAnagramGroup.push(word);
+      continue;
+    }
+
+    result.push(currentAnagramGroup);
+    currentAnagramGroup = [word];
+    currentAnagram = sortedWord;
+  }
+
+  result.push(currentAnagramGroup);
+
+  return result;
+}
+
+
+// Solution 2
+// O(w*n*log(n)) Time | O(wn) Space
+
 function groupAnagrams(words) {
   const anagrams = {};
   for (const word of words) {
@@ -30,5 +68,3 @@ function groupAnagrams(words) {
 }
 
 exports.groupAnagrams = groupAnagrams;
-// Solution 2
-// O(w*n*log(n)) Time | O(wn) Space
