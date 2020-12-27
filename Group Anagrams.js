@@ -28,5 +28,7 @@ function groupAnagrams(words) {
   }
   return Object.values(anagrams);
 }
+
+exports.groupAnagrams = groupAnagrams;
 // Solution 2
 // O(w*n*log(n)) Time | O(wn) Space
